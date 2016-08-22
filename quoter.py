@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import glob
 import random
 
@@ -16,4 +18,4 @@ for line in file:
 file.close()
 
 for index in range(len(lines)):
-    print("\e{}m {}\e[0m".format(colours[index],lines[index]))
+    print("\033[{}m {}\033[0;m".format(colours[index],lines[index]))
