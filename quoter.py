@@ -16,6 +16,8 @@ lines = []
 for line in file:
     lines.append(line.replace('\n', ''))
 file.close()
+
 print("\n")
+
 for index in range(len(lines)):
     print("\033[{}m {}\033[0;m".format(colours[index],lines[index]))
